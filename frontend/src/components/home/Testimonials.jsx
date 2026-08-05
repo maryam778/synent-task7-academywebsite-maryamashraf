@@ -109,7 +109,7 @@ const Testimonials = () => {
         </motion.p>
 
         <div className="mt-16 max-w-4xl mx-auto">
-                    <AnimatePresence mode="wait">
+          <AnimatePresence mode="wait">
             <motion.div
               key={current}
               initial={{ opacity: 0, y: 40, scale: 0.95 }}
@@ -218,11 +218,10 @@ const Testimonials = () => {
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.9 }}
                   onClick={() => setCurrent(index)}
-                  className={`h-3 rounded-full transition-all ${
-                    current === index
+                  className={`h-3 rounded-full transition-all ${current === index
                       ? "w-8 bg-[#FF0033]"
                       : "w-3 bg-white/30"
-                  }`}
+                    }`}
                 />
               ))}
             </div>

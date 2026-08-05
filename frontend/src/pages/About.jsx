@@ -28,25 +28,25 @@ const About = () => {
     "Board Exam Preparation",
   ];
   const steps = [
-  {
-    icon: <FaLightbulb />,
-    title: "Concept Clarity",
-    description:
-      "We focus on building strong concepts so students understand topics instead of memorizing.",
-  },
-  {
-    icon: <FaTasks />,
-    title: "Practice & Assessment",
-    description:
-      "Regular tests and practice sessions help students improve their performance.",
-  },
-  {
-    icon: <FaUserFriends />,
-    title: "Individual Attention",
-    description:
-      "Every student receives proper guidance and support according to their needs.",
-  },
-];
+    {
+      icon: <FaLightbulb />,
+      title: "Concept Clarity",
+      description:
+        "We focus on building strong concepts so students understand topics instead of memorizing.",
+    },
+    {
+      icon: <FaTasks />,
+      title: "Practice & Assessment",
+      description:
+        "Regular tests and practice sessions help students improve their performance.",
+    },
+    {
+      icon: <FaUserFriends />,
+      title: "Individual Attention",
+      description:
+        "Every student receives proper guidance and support according to their needs.",
+    },
+  ];
   const missionVision = [
     {
       icon: <FaBullseye />,
@@ -123,7 +123,7 @@ const About = () => {
         "Our students consistently achieve excellent academic performance and confidence.",
     },
   ];
-   const teachers = [
+  const teachers = [
     {
       image: teacher1,
       name: "Muhammad Amir",
@@ -295,11 +295,14 @@ const About = () => {
 
         </div>
       </section>
-      <section className="py-24 bg-[#0B1120]">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-16 sm:py-20 lg:py-24 bg-[#0B1120]">
+
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
 
           {/* Heading */}
           <div className="text-center">
+
 
             {/* Badge */}
             <motion.div
@@ -309,14 +312,42 @@ const About = () => {
               transition={{ duration: 0.6 }}
               className="flex justify-center"
             >
-              <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#FF0033]/10 border border-[#FF0033]/30">
-                <span className="text-[#FF0033] text-lg">✦</span>
 
-                <span className="text-sm font-semibold uppercase tracking-wider text-[#FF0033]">
+              <div className="
+          inline-flex
+          items-center
+          gap-2
+          px-4
+          sm:px-5
+          py-2
+          rounded-full
+          bg-[#FF0033]/10
+          border
+          border-[#FF0033]/30
+        ">
+
+                <span className="text-[#FF0033] text-base sm:text-lg">
+                  ✦
+                </span>
+
+
+                <span className="
+            text-xs
+            sm:text-sm
+            font-semibold
+            uppercase
+            tracking-wider
+            text-[#FF0033]
+          ">
                   Mission & Vision
                 </span>
+
+
               </div>
+
             </motion.div>
+
+
 
             {/* Heading */}
             <motion.h2
@@ -324,13 +355,29 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="mt-6 text-4xl md:text-5xl lg:text-6xl font-extrabold text-white"
+
+              className="
+        mt-5
+        sm:mt-6
+        text-3xl
+        sm:text-4xl
+        md:text-5xl
+        lg:text-6xl
+        font-extrabold
+        leading-tight
+        text-white
+        "
             >
+
               What Drives
+
               <span className="block text-[#FF0033]">
                 Our Academy
               </span>
+
             </motion.h2>
+
+
 
             {/* Description */}
             <motion.p
@@ -338,52 +385,195 @@ const About = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.4 }}
-              className="mt-6 max-w-3xl mx-auto text-base md:text-lg leading-8 text-slate-300"
+
+              className="
+        mt-5
+        sm:mt-6
+        max-w-3xl
+        mx-auto
+        text-sm
+        sm:text-base
+        md:text-lg
+        leading-7
+        sm:leading-8
+        text-slate-300
+        "
             >
+
               Our mission and vision guide everything we do, helping students
               grow academically, personally, and confidently.
+
             </motion.p>
 
+
           </div>
+
+
+
 
           {/* Cards */}
-          <div className="mt-16 grid md:grid-cols-2 gap-8">
+          <div className="
+      mt-10
+      sm:mt-14
+      lg:mt-16
+
+      grid
+      grid-cols-1
+      md:grid-cols-2
+
+      gap-5
+      sm:gap-8
+    ">
+
 
             {missionVision.map((item, index) => (
+
               <motion.div
+
                 key={index}
-                initial={{ opacity: 0, y: 60 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+
+                initial={{
+                  opacity: 0,
+                  y: 60
+                }}
+
+                whileInView={{
+                  opacity: 1,
+                  y: 0
+                }}
+
+                viewport={{
+                  once: true
+                }}
+
                 transition={{
                   duration: 0.6,
-                  delay: index * 0.2,
+                  delay: index * 0.2
                 }}
-              >
-                <div className="bg-white/5 border border-white/10 rounded-3xl p-10 transition-all duration-500 hover:-translate-y-3 hover:border-[#FF0033]">
 
-                  <div className="w-16 h-16 rounded-2xl bg-[#FF0033]/10 flex items-center justify-center text-[#FF0033] text-3xl">
+              >
+
+
+                <div
+                  className="
+            h-full
+            bg-white/5
+            border
+            border-white/10
+
+            rounded-3xl
+
+            p-6
+            sm:p-8
+            lg:p-10
+
+            transition-all
+            duration-500
+
+            hover:-translate-y-3
+            hover:border-[#FF0033]
+
+            "
+                >
+
+
+
+                  {/* Icon */}
+
+                  <div
+                    className="
+              w-12
+              h-12
+              sm:w-14
+              sm:h-14
+              lg:w-16
+              lg:h-16
+
+              rounded-2xl
+
+              bg-[#FF0033]/10
+
+              flex
+              items-center
+              justify-center
+
+              text-[#FF0033]
+
+              text-2xl
+              sm:text-3xl
+              "
+                  >
+
                     {item.icon}
+
                   </div>
 
-                  <h3 className="mt-8 text-3xl font-bold text-white">
+
+
+
+                  {/* Title */}
+
+                  <h3
+                    className="
+              mt-6
+              sm:mt-8
+
+              text-2xl
+              sm:text-3xl
+
+              font-bold
+
+              text-white
+              "
+                  >
+
                     {item.title}
+
                   </h3>
 
-                  <p className="mt-5 text-slate-300 leading-8">
+
+
+
+                  {/* Description */}
+
+                  <p
+                    className="
+              mt-4
+              sm:mt-5
+
+              text-sm
+              sm:text-base
+
+              leading-7
+              sm:leading-8
+
+              text-slate-300
+              "
+                  >
+
                     {item.description}
+
                   </p>
 
+
+
                 </div>
+
+
               </motion.div>
+
+
             ))}
+
 
           </div>
 
+
         </div>
+
       </section>
-      <section className="py-24 bg-[#111827]">
-        <div className="max-w-7xl mx-auto px-6">
+      <section className="py-16 sm:py-20 lg:py-24 bg-[#111827]">
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
           {/* Badge */}
           <motion.div
@@ -393,14 +583,35 @@ const About = () => {
             transition={{ duration: 0.6 }}
             className="flex justify-center"
           >
-            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#FF0033]/10 border border-[#FF0033]/30">
-              <span className="text-[#FF0033] text-lg">✦</span>
+            <div className="
+        inline-flex
+        items-center
+        gap-2
+        px-4 sm:px-5
+        py-2
+        rounded-full
+        bg-[#FF0033]/10
+        border
+        border-[#FF0033]/30
+      ">
+              <span className="text-[#FF0033] text-lg">
+                ✦
+              </span>
 
-              <span className="text-sm font-semibold uppercase tracking-wider text-[#FF0033]">
+              <span className="
+          text-xs
+          sm:text-sm
+          font-semibold
+          uppercase
+          tracking-wider
+          text-[#FF0033]
+        ">
                 Our Achievements
               </span>
+
             </div>
           </motion.div>
+
 
           {/* Heading */}
           <motion.h2
@@ -408,13 +619,29 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="mt-6 text-center text-4xl md:text-5xl lg:text-6xl font-extrabold text-white"
+
+            className="
+        mt-5
+        sm:mt-6
+        text-center
+        text-3xl
+        sm:text-4xl
+        md:text-5xl
+        lg:text-6xl
+        font-extrabold
+        leading-tight
+        text-white
+      "
           >
             Our Success
+
             <span className="block text-[#FF0033]">
               In Numbers
             </span>
+
           </motion.h2>
+
+
 
           {/* Description */}
           <motion.p
@@ -422,61 +649,168 @@ const About = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            className="mt-6 max-w-3xl mx-auto text-center text-base md:text-lg leading-8 text-slate-300"
+
+            className="
+        mt-5
+        sm:mt-6
+        max-w-3xl
+        mx-auto
+        text-center
+        text-sm
+        sm:text-base
+        md:text-lg
+        leading-7
+        sm:leading-8
+        text-slate-300
+      "
           >
             We are proud of the achievements we have made through quality
             education, experienced teachers, and the trust of hundreds of
             successful students.
+
           </motion.p>
 
+
+
+
           {/* Statistics Cards */}
-          <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-8">
+
+          <div
+            className="
+      mt-10
+      sm:mt-14
+      lg:mt-16
+
+      grid
+      grid-cols-1
+      sm:grid-cols-2
+      lg:grid-cols-4
+
+      gap-5
+      sm:gap-6
+      lg:gap-8
+      "
+          >
 
             {stats.map((item, index) => (
+
               <motion.div
+
                 key={index}
-                initial={{ opacity: 0, y: 60 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
+
+                initial={{
+                  opacity: 0,
+                  y: 60
+                }}
+
+                whileInView={{
+                  opacity: 1,
+                  y: 0
+                }}
+
+                viewport={{
+                  once: true
+                }}
+
                 transition={{
                   duration: 0.6,
-                  delay: index * 0.2,
+                  delay: index * 0.2
                 }}
-                className="bg-white/5 border border-white/10 rounded-3xl p-8 text-center transition-all duration-500 hover:-translate-y-3 hover:border-[#FF0033] hover:shadow-[0_0_30px_rgba(255,0,51,0.25)]"
+
+                whileHover={{
+                  y: -8,
+                  scale: 1.03
+                }}
+
+                className="
+          bg-white/5
+          border
+          border-white/10
+
+          rounded-3xl
+
+          p-6
+          sm:p-8
+
+          text-center
+
+          transition-all
+          duration-500
+
+          hover:border-[#FF0033]
+          hover:shadow-[0_0_30px_rgba(255,0,51,0.25)]
+          "
+
               >
-                <h3 className="text-5xl md:text-6xl font-extrabold text-[#FF0033]">
-                  {item.number}{item.suffix}
+
+                <h3
+                  className="
+            text-4xl
+            sm:text-5xl
+            lg:text-6xl
+
+            font-extrabold
+
+            text-[#FF0033]
+            "
+                >
+                  {item.number}
+                  {item.suffix}
+
                 </h3>
 
-                <p className="mt-5 text-lg font-medium text-slate-300">
+
+                <p
+                  className="
+            mt-3
+            sm:mt-5
+
+            text-sm
+            sm:text-lg
+
+            font-medium
+
+            text-slate-300
+            "
+                >
                   {item.title}
+
                 </p>
+
+
               </motion.div>
+
             ))}
+
 
           </div>
 
+
         </div>
       </section>
-      <section className="relative overflow-hidden py-24 bg-[#0B1120]">
+      <section className="relative overflow-hidden py-16 sm:py-20 lg:py-24 bg-[#0B1120]">
 
         {/* Background Glow */}
         <div
           className="
-        absolute
-        top-20
-        left-1/2
-        -translate-x-1/2
-        w-[500px]
-        h-[500px]
-        rounded-full
-        bg-[#FF0033]/10
-        blur-3xl
-        "
+    absolute
+    top-10
+    left-1/2
+    -translate-x-1/2
+    w-[300px]
+    h-[300px]
+    sm:w-[400px]
+    sm:h-[400px]
+    lg:w-[500px]
+    lg:h-[500px]
+    rounded-full
+    bg-[#FF0033]/10
+    blur-3xl
+    "
         ></div>
 
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6">
+        <div className="relative z-10 max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
 
 
           {/* Badge */}
@@ -488,29 +822,36 @@ const About = () => {
             className="flex justify-center"
           >
 
-            <div className="
-          inline-flex
-          items-center
-          gap-2
-          px-5
-          py-2
-          rounded-full
-          bg-[#FF0033]/10
-          border
-          border-[#FF0033]/30
-          ">
+            <div
+              className="
+        inline-flex
+        items-center
+        gap-2
+        px-4
+        sm:px-5
+        py-2
+        rounded-full
+        bg-[#FF0033]/10
+        border
+        border-[#FF0033]/30
+        "
+            >
 
               <span className="text-[#FF0033] text-lg">
                 ✦
               </span>
 
-              <span className="
-            text-sm
-            font-semibold
-            uppercase
-            tracking-wider
-            text-[#FF0033]
-            ">
+
+              <span
+                className="
+          text-xs
+          sm:text-sm
+          font-semibold
+          uppercase
+          tracking-wider
+          text-[#FF0033]
+          "
+              >
                 Why Choose Us
               </span>
 
@@ -521,21 +862,26 @@ const About = () => {
 
 
           {/* Heading */}
+
           <motion.h2
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.2 }}
+
             className="
-          mt-6
-          text-center
-          text-4xl
-          md:text-5xl
-          lg:text-6xl
-          font-extrabold
-          text-white
-          leading-tight
-          "
+      mt-5
+      sm:mt-6
+      text-center
+      text-3xl
+      sm:text-4xl
+      md:text-5xl
+      lg:text-6xl
+      font-extrabold
+      text-white
+      leading-tight
+      break-words
+      "
           >
 
             Why Students Choose
@@ -550,21 +896,26 @@ const About = () => {
 
 
           {/* Description */}
+
           <motion.p
             initial={{ opacity: 0, y: 60 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.4 }}
+
             className="
-          mt-6
-          max-w-3xl
-          mx-auto
-          text-center
-          text-base
-          md:text-lg
-          leading-8
-          text-slate-300
-          "
+      mt-5
+      sm:mt-6
+      max-w-3xl
+      mx-auto
+      text-center
+      text-sm
+      sm:text-base
+      md:text-lg
+      leading-7
+      sm:leading-8
+      text-slate-300
+      "
           >
 
             We provide a supportive learning environment where experienced
@@ -577,17 +928,27 @@ const About = () => {
 
 
           {/* Cards */}
-          <div className="
-        mt-16
-        grid
-        grid-cols-1
-        md:grid-cols-2
-        lg:grid-cols-3
-        gap-8
-        ">
+
+          <div
+            className="
+      mt-10
+      sm:mt-14
+      lg:mt-16
+
+      grid
+      grid-cols-1
+      sm:grid-cols-2
+      lg:grid-cols-3
+
+      gap-5
+      sm:gap-6
+      lg:gap-8
+      "
+          >
 
 
             {featuresChoose.map((feature, index) => (
+
 
               <motion.div
                 key={index}
@@ -611,40 +972,63 @@ const About = () => {
                   delay: index * 0.15
                 }}
 
+
                 className="
-              group
-              flex
-              flex-col
-              bg-white/5
-              border
-              border-white/10
-              rounded-3xl
-              p-8
-              transition-all
-              duration-500
-              hover:-translate-y-3
-              hover:border-[#FF0033]/50
-              hover:bg-white/10
-              "
+          group
+          flex
+          flex-col
+          h-full
+
+          bg-white/5
+          border
+          border-white/10
+
+          rounded-3xl
+
+          p-5
+          sm:p-6
+          lg:p-8
+
+          overflow-hidden
+
+          transition-all
+          duration-500
+
+          hover:-translate-y-3
+          hover:border-[#FF0033]/50
+          hover:bg-white/10
+          "
               >
 
 
+
                 {/* Icon */}
+
                 <div
                   className="
-                w-14
-                h-14
-                rounded-2xl
-                bg-[#FF0033]/10
-                flex
-                items-center
-                justify-center
-                text-[#FF0033]
-                text-2xl
-                transition-all
-                duration-300
-                group-hover:scale-110
-                "
+            w-12
+            h-12
+            sm:w-14
+            sm:h-14
+
+            rounded-2xl
+
+            bg-[#FF0033]/10
+
+            flex
+            items-center
+            justify-center
+
+            text-[#FF0033]
+
+            text-xl
+            sm:text-2xl
+
+            transition-all
+            duration-300
+
+            group-hover:scale-110
+            "
                 >
 
                   {feature.icon}
@@ -653,16 +1037,28 @@ const About = () => {
 
 
 
+
+
                 {/* Title */}
+
                 <h3
                   className="
-                mt-6
-                text-2xl
-                font-bold
-                text-white
-                group-hover:text-[#FF0033]
-                transition
-                "
+            mt-5
+            sm:mt-6
+
+            text-xl
+            sm:text-2xl
+
+            font-bold
+
+            text-white
+
+            break-words
+
+            group-hover:text-[#FF0033]
+
+            transition
+            "
                 >
 
                   {feature.title}
@@ -672,13 +1068,24 @@ const About = () => {
 
 
 
+
                 {/* Description */}
+
                 <p
                   className="
-                mt-4
-                text-slate-300
-                leading-7
-                "
+            mt-3
+            sm:mt-4
+
+            text-sm
+            sm:text-base
+
+            text-slate-300
+
+            leading-6
+            sm:leading-7
+
+            break-words
+            "
                 >
 
                   {feature.description}
@@ -688,20 +1095,32 @@ const About = () => {
 
 
 
-                {/* Bottom Text */}
+
+                {/* Bottom */}
+
                 <div
                   className="
-                mt-auto
-                pt-6
-                flex
-                items-center
-                gap-2
-                text-[#FF0033]
-                font-semibold
-                transition-all
-                duration-300
-                group-hover:gap-4
-                "
+            mt-auto
+            pt-5
+            sm:pt-6
+
+            flex
+            items-center
+
+            gap-2
+
+            text-[#FF0033]
+
+            font-semibold
+
+            text-sm
+            sm:text-base
+
+            transition-all
+            duration-300
+
+            group-hover:gap-4
+            "
                 >
 
                   <span>
@@ -712,10 +1131,310 @@ const About = () => {
                     →
                   </span>
 
+
                 </div>
 
 
               </motion.div>
+
+
+            ))}
+
+
+          </div>
+
+
+        </div>
+
+
+      </section>
+      <section className="py-16 sm:py-20 lg:py-24 bg-[#111827]">
+
+        <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">
+
+
+          {/* Heading */}
+          <div className="text-center">
+
+
+            {/* Badge */}
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="flex justify-center"
+            >
+
+              <div
+                className="
+          inline-flex
+          items-center
+          gap-2
+          px-4
+          sm:px-5
+          py-2
+          rounded-full
+          bg-[#FF0033]/10
+          border
+          border-[#FF0033]/30
+          "
+              >
+
+                <span className="text-[#FF0033] text-lg">
+                  ✦
+                </span>
+
+
+                <span
+                  className="
+            text-xs
+            sm:text-sm
+            font-semibold
+            uppercase
+            tracking-wider
+            text-[#FF0033]
+            "
+                >
+                  Our Approach
+                </span>
+
+              </div>
+
+            </motion.div>
+
+
+
+
+            {/* Heading */}
+
+            <motion.h2
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+
+              className="
+        mt-5
+        sm:mt-6
+        text-3xl
+        sm:text-4xl
+        md:text-5xl
+        lg:text-6xl
+        font-extrabold
+        leading-tight
+        text-white
+        break-words
+        "
+            >
+
+              Modern Teaching
+
+              <span className="block text-[#FF0033]">
+                For Better Learning
+              </span>
+
+            </motion.h2>
+
+
+
+
+
+            {/* Description */}
+
+            <motion.p
+              initial={{ opacity: 0, y: 60 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+
+              className="
+        mt-5
+        sm:mt-6
+        max-w-3xl
+        mx-auto
+        text-sm
+        sm:text-base
+        md:text-lg
+        text-slate-300
+        leading-7
+        sm:leading-8
+        "
+            >
+
+              Our teaching approach focuses on understanding,
+              practice, and continuous improvement. We help students
+              build confidence and achieve academic success.
+
+            </motion.p>
+
+
+          </div>
+
+
+
+
+
+          {/* Learning Steps Cards */}
+
+          <div
+            className="
+      mt-10
+      sm:mt-14
+      lg:mt-16
+
+      grid
+      grid-cols-1
+      sm:grid-cols-2
+      lg:grid-cols-3
+
+      gap-5
+      sm:gap-6
+      lg:gap-8
+      "
+          >
+
+
+            {steps.map((step, index) => (
+
+
+              <motion.div
+                key={index}
+
+                initial={{
+                  opacity: 0,
+                  y: 60
+                }}
+
+                whileInView={{
+                  opacity: 1,
+                  y: 0
+                }}
+
+                viewport={{
+                  once: true
+                }}
+
+                transition={{
+                  duration: 0.6,
+                  delay: index * 0.2
+                }}
+
+
+                className="
+          group
+
+          bg-white/5
+          border
+          border-white/10
+
+          rounded-3xl
+
+          p-5
+          sm:p-6
+          lg:p-8
+
+          transition-all
+          duration-500
+
+          hover:-translate-y-3
+          hover:border-[#FF0033]
+
+          overflow-hidden
+          "
+              >
+
+
+
+
+                {/* Icon */}
+
+                <div
+                  className="
+            w-12
+            h-12
+
+            sm:w-14
+            sm:h-14
+
+            lg:w-16
+            lg:h-16
+
+            rounded-2xl
+
+            bg-[#FF0033]/10
+
+            flex
+            items-center
+            justify-center
+
+            text-[#FF0033]
+
+            text-2xl
+            sm:text-3xl
+            "
+                >
+
+                  {step.icon}
+
+                </div>
+
+
+
+
+
+                {/* Title */}
+
+                <h3
+                  className="
+            mt-5
+            sm:mt-6
+
+            text-xl
+            sm:text-2xl
+
+            font-bold
+
+            text-white
+
+            break-words
+            "
+                >
+
+                  {step.title}
+
+                </h3>
+
+
+
+
+
+                {/* Description */}
+
+                <p
+                  className="
+            mt-3
+            sm:mt-4
+
+            text-sm
+            sm:text-base
+
+            text-slate-300
+
+            leading-6
+            sm:leading-7
+
+            break-words
+            "
+                >
+
+                  {step.description}
+
+                </p>
+
+
+              </motion.div>
+
 
             ))}
 
@@ -728,249 +1447,121 @@ const About = () => {
 
       </section>
       <section className="py-24 bg-[#111827]">
-
         <div className="max-w-7xl mx-auto px-6">
 
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="flex justify-center"
+          >
+            <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#FF0033]/10 border border-[#FF0033]/30">
+              <span className="text-[#FF0033] text-lg">✦</span>
+
+              <span className="text-sm font-semibold uppercase tracking-wider text-[#FF0033]">
+                Our Faculty
+              </span>
+            </div>
+          </motion.div>
 
           {/* Heading */}
-          <div className="text-center">
+          <motion.h2
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-6 text-center text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-white"
+          >
+            Meet Our
 
-            <motion.div
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="flex justify-center"
-            >
-
-              <div className="
-          inline-flex
-          items-center
-          gap-2
-          px-5
-          py-2
-          rounded-full
-          bg-[#FF0033]/10
-          border
-          border-[#FF0033]/30
-          ">
-
-                <span className="text-[#FF0033] text-lg">
-                  ✦
-                </span>
-
-                <span className="
-            text-sm
-            font-semibold
-            uppercase
-            tracking-wider
-            text-[#FF0033]
-            ">
-                  Our Approach
-                </span>
-
-              </div>
-
-            </motion.div>
-
-
-            <motion.h2
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              className="
-          mt-6
-          text-4xl
-          md:text-5xl
-          font-extrabold
-          text-white
-          "
-            >
-
-              Modern Teaching
-
-              <span className="block text-[#FF0033]">
-                For Better Learning
-              </span>
-
-            </motion.h2>
-
-
-            <motion.p
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.4 }}
-              className="
-          mt-6
-          max-w-3xl
-          mx-auto
-          text-slate-300
-          leading-8
-          "
-            >
-
-              Our teaching approach focuses on understanding,
-              practice, and continuous improvement. We help students
-              build confidence and achieve academic success.
-
-            </motion.p>
-
-
-          </div>
-            {/* Learning Steps Cards */}
-            <div className="
-mt-16 grid md:grid-cols-3 gap-8
-">
-              {steps.map((step, index) => (
-                <motion.div key={index}
-                  initial={{ opacity: 0, y: 60 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.2 }}
-                  className=" bg-white/5 border border-white/10 rounded-3xl p-8 transition-all duration-500 hover:-translate-y-3 
- hover:border-[#FF0033] "
-                >
-                  {/* Icon */}
-                  <div className="
-      w-16 h-16 rounded-2xl bg-[#FF0033]/10 flex items-center justify-center text-[#FF0033] text-3xl"
-                  >
-                    {step.icon}
-                  </div>
-                  {/* Title */}
-                  <h3 className="
-      mt-6 text-2xl font-bold text-white">
-                    {step.title}
-                  </h3>
-                  {/* Description */}
-                  <p className="
-      mt-4 text-slate-300 leading-7
-      "
-                  >
-                    {step.description}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-      </section>
-       <section className="py-24 bg-[#111827]">
-      <div className="max-w-7xl mx-auto px-6">
-
-        {/* Badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="flex justify-center"
-        >
-          <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-[#FF0033]/10 border border-[#FF0033]/30">
-            <span className="text-[#FF0033] text-lg">✦</span>
-
-            <span className="text-sm font-semibold uppercase tracking-wider text-[#FF0033]">
-              Our Faculty
+            <span className="block text-[#FF0033]">
+              Expert Teachers
             </span>
-          </div>
-        </motion.div>
+          </motion.h2>
 
-        {/* Heading */}
-        <motion.h2
-          initial={{ opacity: 0, y: 60 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="mt-6 text-center text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight text-white"
-        >
-          Meet Our
+          {/* Description */}
+          <motion.p
+            initial={{ opacity: 0, y: 60 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="mt-6 max-w-3xl mx-auto text-center text-base md:text-lg leading-8 text-slate-300"
+          >
+            Our experienced teachers are committed to inspiring students,
+            strengthening concepts, and guiding them toward academic excellence
+            through quality education and personalized support.
+          </motion.p>
 
-          <span className="block text-[#FF0033]">
-            Expert Teachers
-          </span>
-        </motion.h2>
+          {/* Teachers Grid */}
+          <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 
-        {/* Description */}
-        <motion.p
-          initial={{ opacity: 0, y: 60 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-6 max-w-3xl mx-auto text-center text-base md:text-lg leading-8 text-slate-300"
-        >
-          Our experienced teachers are committed to inspiring students,
-          strengthening concepts, and guiding them toward academic excellence
-          through quality education and personalized support.
-        </motion.p>
+            {teachers.map((teacher, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 60 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.6,
+                  delay: index * 0.2,
+                }}
+                className="group cursor-pointer overflow-hidden rounded-3xl bg-white/5 border border-white/10 shadow-xl transition-all duration-500 hover:-translate-y-3 hover:border-[#FF0033]/50 hover:shadow-[0_0_30px_rgba(255,0,51,0.2)]"
+              >
 
-        {/* Teachers Grid */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                {/* Image */}
+                <div className="relative overflow-hidden">
 
-          {teachers.map((teacher, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 60 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{
-                duration: 0.6,
-                delay: index * 0.2,
-              }}
-              className="group cursor-pointer overflow-hidden rounded-3xl bg-white/5 border border-white/10 shadow-xl transition-all duration-500 hover:-translate-y-3 hover:border-[#FF0033]/50 hover:shadow-[0_0_30px_rgba(255,0,51,0.2)]"
-            >
+                  <img
+                    src={teacher.image}
+                    alt={teacher.name}
+                    className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
 
-              {/* Image */}
-              <div className="relative overflow-hidden">
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B1120] via-transparent to-transparent opacity-70"></div>
 
-                <img
-                  src={teacher.image}
-                  alt={teacher.name}
-                  className="w-full h-80 object-cover transition-transform duration-700 group-hover:scale-105"
-                />
+                  {/* Subject Badge */}
+                  <div className="absolute top-4 left-4">
+                    <span className="px-4 py-2 rounded-full bg-[#FF0033] text-white text-sm font-semibold">
+                      {teacher.subject}
+                    </span>
+                  </div>
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B1120] via-transparent to-transparent opacity-70"></div>
-
-                {/* Subject Badge */}
-                <div className="absolute top-4 left-4">
-                  <span className="px-4 py-2 rounded-full bg-[#FF0033] text-white text-sm font-semibold">
-                    {teacher.subject}
-                  </span>
                 </div>
 
-              </div>
+                {/* Top Line */}
+                <div className="h-1 w-0 bg-[#FF0033] transition-all duration-500 group-hover:w-full"></div>
 
-              {/* Top Line */}
-              <div className="h-1 w-0 bg-[#FF0033] transition-all duration-500 group-hover:w-full"></div>
+                {/* Content */}
+                <div className="p-7 flex flex-col h-full">
 
-              {/* Content */}
-              <div className="p-7 flex flex-col h-full">
+                  <span className="inline-block w-fit px-4 py-2 rounded-full bg-[#FF0033]/10 text-[#FF0033] text-sm font-semibold uppercase tracking-wider">
+                    {teacher.experience}
+                  </span>
 
-                <span className="inline-block w-fit px-4 py-2 rounded-full bg-[#FF0033]/10 text-[#FF0033] text-sm font-semibold uppercase tracking-wider">
-                  {teacher.experience}
-                </span>
+                  <h3 className="mt-5 text-2xl font-bold text-white transition-colors duration-300 group-hover:text-[#FF0033]">
+                    {teacher.name}
+                  </h3>
 
-                <h3 className="mt-5 text-2xl font-bold text-white transition-colors duration-300 group-hover:text-[#FF0033]">
-                  {teacher.name}
-                </h3>
+                  <p className="mt-4 text-slate-300 leading-7 flex-grow">
+                    {teacher.description}
+                  </p>
 
-                <p className="mt-4 text-slate-300 leading-7 flex-grow">
-                  {teacher.description}
-                </p>
+                  <button className="mt-6 flex items-center gap-2 text-[#FF0033] font-semibold transition-all duration-300 group-hover:gap-4">
+                    <span>Meet Teacher</span>
+                    <span>→</span>
+                  </button>
 
-                <button className="mt-6 flex items-center gap-2 text-[#FF0033] font-semibold transition-all duration-300 group-hover:gap-4">
-                  <span>Meet Teacher</span>
-                  <span>→</span>
-                </button>
+                </div>
 
-              </div>
+              </motion.div>
+            ))}
 
-            </motion.div>
-          ))}
-
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 };

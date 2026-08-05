@@ -108,7 +108,7 @@ const Teachers = () => {
         </motion.p>
 
         <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    {teachers.map((teacher, index) => (
+          {teachers.map((teacher, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 60 }}

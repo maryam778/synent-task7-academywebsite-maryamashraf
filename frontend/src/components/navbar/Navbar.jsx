@@ -43,7 +43,7 @@ const Navbar = () => {
                     {[
                         { name: "Home", path: "/" },
                         { name: "About", path: "/about" },
-                        { name: "Courses", path: "/courses" },
+                        { name: "Services", path: "/courses" },
                         { name: "Teachers", path: "/teachers" },
                         // { name: "Gallery", path: "/gallery" },
                         { name: "Contact", path: "/contact" },
@@ -71,8 +71,8 @@ const Navbar = () => {
 
                                         <span
                                             className={`absolute left-0 -bottom-1 h-[2px] bg-[#FF0033] transition-all duration-300 ${isActive
-                                                    ? "w-full"
-                                                    : "w-0 group-hover:w-full"
+                                                ? "w-full"
+                                                : "w-0 group-hover:w-full"
                                                 }`}
                                         ></span>
                                     </>
@@ -117,7 +117,7 @@ const Navbar = () => {
                         {[
                             { name: "Home", path: "/" },
                             { name: "About", path: "/about" },
-                            { name: "Courses", path: "/courses" },
+                            { name: "Services", path: "/courses" },
                             { name: "Teachers", path: "/teachers" },
                             // { name: "Gallery", path: "/gallery" },
                             { name: "Contact", path: "/contact" },
@@ -148,7 +148,7 @@ const Navbar = () => {
                             </button>
                         </div>
                     </ul>
-              </motion.div>
+                </motion.div>
             )}
         </motion.nav>
     );

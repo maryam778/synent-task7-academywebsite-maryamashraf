@@ -99,7 +99,7 @@ const Contact = () => {
         </motion.p>
 
         <div className="mt-16 grid lg:grid-cols-2 gap-16 items-start">
-                    {/* Left Side */}
+          {/* Left Side */}
           <motion.div
             initial={{ opacity: 0, x: -60 }}
             whileInView={{ opacity: 1, x: 0 }}
