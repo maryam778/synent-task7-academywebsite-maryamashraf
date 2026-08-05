@@ -1,5 +1,5 @@
 import studImg from "../../assets/images/students.png";
-
+import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section
@@ -14,10 +14,20 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-80px)]">
 
           {/* Left Side */}
-          <div className="space-y-5">
+          <motion.div
+            initial={{ opacity: 0, x: -70 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="space-y-5"
+          >
 
             {/* Badge */}
-            <div
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1, duration: 0.6 }}
               className="inline-flex items-center gap-2
               px-5 py-2 rounded-full
               bg-[#FF0033]/10
@@ -28,10 +38,14 @@ const Hero = () => {
               <span className="text-sm font-semibold uppercase tracking-wider text-[#FF0033]">
                 Trusted Amir Math & Science Academy
               </span>
-            </div>
+            </motion.div>
 
             {/* Heading */}
-            <h1
+            <motion.h1
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.2, duration: 0.7 }}
               className="
               text-4xl
               md:text-5xl
@@ -49,10 +63,14 @@ const Hero = () => {
               <span className="block text-[#FF0033]">
                 Quality Education
               </span>
-            </h1>
+            </motion.h1>
 
             {/* Description */}
-            <p
+            <motion.p
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.3, duration: 0.7 }}
               className="max-w-xl
               text-base
               lg:text-lg
@@ -63,10 +81,16 @@ const Hero = () => {
               in a modern learning environment designed to build
               confidence, improve academic performance, and prepare
               students for future success.
-            </p>
+            </motion.p>
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.4, duration: 0.7 }}
+              className="flex flex-col sm:flex-row gap-4"
+            >
 
               <button
                 className="bg-[#FF0033]
@@ -95,12 +119,21 @@ const Hero = () => {
                 Explore Courses
               </button>
 
-            </div>
+            </motion.div>
 
             {/* Stats */}
-            <div className="flex gap-10 pt-2">
+            <motion.div
+              initial={{ opacity: 0, y: 40 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.5, duration: 0.7 }}
+              className="flex gap-10 pt-2"
+            >
 
-              <div>
+              <motion.div
+                whileHover={{ y: -8, scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
                 <h2 className="text-3xl font-bold text-white">
                   500+
                 </h2>
@@ -108,9 +141,12 @@ const Hero = () => {
                 <p className="text-slate-400">
                   Students
                 </p>
-              </div>
+              </motion.div>
 
-              <div>
+              <motion.div
+                whileHover={{ y: -8, scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
                 <h2 className="text-3xl font-bold text-white">
                   25+
                 </h2>
@@ -118,9 +154,12 @@ const Hero = () => {
                 <p className="text-slate-400">
                   Teachers
                 </p>
-              </div>
+              </motion.div>
 
-              <div>
+              <motion.div
+                whileHover={{ y: -8, scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
                 <h2 className="text-3xl font-bold text-white">
                   98%
                 </h2>
@@ -128,17 +167,32 @@ const Hero = () => {
                 <p className="text-slate-400">
                   Success
                 </p>
-              </div>
+              </motion.div>
 
-            </div>
+            </motion.div>
 
-          </div>
+          </motion.div>
 
           {/* Right Side */}
-          <div className="relative flex justify-center items-center">
+          <motion.div
+            initial={{ opacity: 0, x: 70 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="relative flex justify-center items-center"
+          >
 
             {/* Glow */}
-            <div
+            <motion.div
+              animate={{
+                scale: [1, 1.08, 1],
+                opacity: [0.5, 0.8, 0.5],
+              }}
+              transition={{
+                duration: 4,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
               className="absolute
               w-[380px]
               h-[380px]
@@ -148,10 +202,15 @@ const Hero = () => {
               via-[#7C3AED]/20
               to-[#2563EB]/20
               blur-3xl"
-            ></div>
+            />
 
             {/* Image */}
-            <div
+            <motion.div
+              initial={{ scale: 0.85 }}
+              whileInView={{ scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              whileHover={{ y: -10 }}
               className="relative z-10
               w-[400px]
               h-[460px]
@@ -160,14 +219,22 @@ const Hero = () => {
               border border-white/10
               shadow-2xl"
             >
-              <img
+              <motion.img
                 src={studImg}
                 alt="Student"
+                animate={{
+                  y: [0, -10, 0],
+                }}
+                transition={{
+                  duration: 4,
+                  repeat: Infinity,
+                  ease: "easeInOut",
+                }}
                 className="w-full h-full object-cover"
               />
-            </div>
+            </motion.div>
 
-          </div>
+          </motion.div>
 
         </div>
       </div>
