@@ -30,7 +30,7 @@ const Teachers = () => {
         "Making Physics simple with practical explanations and regular practice.",
     },
     {
-      image: teacher3,
+      image: teacher4,
       name: "Ali Hassan",
       subject: "Chemistry",
       experience: "7+ Years",
@@ -38,7 +38,7 @@ const Teachers = () => {
         "Focused on strong concepts and excellent board exam preparation.",
     },
     {
-      image: teacher4,
+      image: teacher3,
       name: "Sara Noor",
       subject: "Biology",
       experience: "5+ Years",
