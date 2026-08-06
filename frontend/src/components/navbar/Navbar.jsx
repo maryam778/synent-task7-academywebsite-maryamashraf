@@ -45,7 +45,6 @@ const Navbar = () => {
                         { name: "About", path: "/about" },
                         { name: "Services", path: "/courses" },
                         { name: "Teachers", path: "/teachers" },
-                        // { name: "Gallery", path: "/gallery" },
                         { name: "Contact", path: "/contact" },
                     ].map((item, index) => (
 
@@ -119,7 +118,6 @@ const Navbar = () => {
                             { name: "About", path: "/about" },
                             { name: "Services", path: "/courses" },
                             { name: "Teachers", path: "/teachers" },
-                            // { name: "Gallery", path: "/gallery" },
                             { name: "Contact", path: "/contact" },
                         ].map((item, index) => (
 

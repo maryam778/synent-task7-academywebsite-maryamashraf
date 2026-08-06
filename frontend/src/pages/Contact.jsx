@@ -52,414 +52,216 @@ const Contact = () => {
   ];
   return (
     <>
-      <section className="
-relative
-overflow-hidden
-min-h-screen
-bg-[#0B1120]
-flex
-items-center
-py-16
-sm:py-20
-lg:py-24
-">
-
-        <div className="
-  max-w-7xl
-  mx-auto
-  px-5
-  sm:px-6
-  lg:px-8
-  w-full
-  ">
-
-          <div className="
-    grid
-    grid-cols-1
-    lg:grid-cols-2
-    gap-10
-    lg:gap-16
-    items-center
-    ">
-
-
-
-            {/* Left Side */}
-
-            <motion.div
-              initial={{ opacity: 0, x: -60 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.8 }}
-            >
-
-
-              {/* Badge */}
-
-              <div className="
-        inline-flex
-        items-center
-        gap-2
-        px-4
-        sm:px-5
-        py-2
-        sm:py-3
-        rounded-full
-        bg-[#FF0033]/10
-        border
-        border-[#FF0033]/30
-        ">
-
-                <span className="text-[#FF0033]">
-                  ✦
-                </span>
-
-                <span className="
-          text-xs
-          sm:text-sm
-          uppercase
-          font-semibold
-          tracking-wider
-          text-[#FF0033]
-          ">
-                  Contact Us
-                </span>
-
-              </div>
-
-
-
-
-
-              {/* Heading */}
-
-              <h1 className="
-        mt-5
-        text-3xl
-        sm:text-4xl
-        md:text-5xl
-        lg:text-6xl
-        font-extrabold
-        leading-tight
-        text-white
-        ">
-
-                Let's Get
-
-                <span className="block text-[#FF0033]">
-                  In Touch
-                </span>
-
-              </h1>
-
-
-
-
-
-              {/* Description */}
-
-              <p className="
-        mt-4
-        text-base
-        sm:text-lg
-        leading-7
-        sm:leading-8
-        text-slate-300
-        max-w-xl
-        ">
-
-                Have questions about admissions, courses, or our academy?
-                Our team is always ready to guide you and help you begin
-                your learning journey.
-
-              </p>
-
-
-
-
-
-              {/* Buttons */}
-
-              <div className="
-        mt-6
-        flex
-        flex-col
-        sm:flex-row
-        gap-4
-        ">
-
-                <button className="
-          w-full
-          sm:w-auto
-          px-8
-          py-3.5
-          rounded-xl
-          bg-[#FF0033]
-          text-white
-          font-semibold
-          hover:scale-105
-          transition-all
-          duration-300
-          ">
-                  Apply Now
-                </button>
-
-
-                <button className="
-          w-full
-          sm:w-auto
-          px-8
-          py-3.5
-          rounded-xl
-          border
-          border-white/20
-          text-white
-          hover:border-[#FF0033]
-          hover:text-[#FF0033]
-          transition-all
-          duration-300
-          ">
-                  Contact Us
-                </button>
-
-
-              </div>
-
-
-
-
-
-
-              {/* Contact Info */}
-
-              <div className="
-        mt-8
-        space-y-5
-        ">
-
-
-
-                <div className="flex gap-3 items-center">
-
-                  <div className="
-            w-11
-            h-11
-            sm:w-12
-            sm:h-12
-            shrink-0
-            rounded-2xl
-            bg-[#FF0033]/10
-            flex
-            items-center
-            justify-center
-            text-[#FF0033]
-            text-xl
-            ">
-
-                    <FaPhoneAlt />
-
-                  </div>
-
-
-                  <div>
-
-                    <h3 className="text-white font-semibold">
-                      Phone
-                    </h3>
-
-                    <p className="text-slate-300 text-sm sm:text-base">
-                      +92 300 1234567
-                    </p>
-
-                  </div>
-
-
-                </div>
-
-
-
-
-
-
-                <div className="
-          flex
-          gap-3
+   {/* Hero Section */}
+<section
+  className="
+  relative
+  overflow-hidden
+  min-h-screen
+  bg-[#0B1120]
+  flex
+  items-center
+  py-16
+  sm:py-20
+  lg:py-24
+  "
+>
+  <div
+    className="
+    max-w-7xl
+    mx-auto
+    px-5
+    sm:px-6
+    lg:px-8
+    w-full
+    "
+  >
+    <div
+      className="
+      grid
+      grid-cols-1
+      lg:grid-cols-2
+      gap-10
+      lg:gap-16
+      items-center
+      "
+    >
+      {/* Left Side */}
+      <motion.div
+        initial={{ opacity: 0, x: -60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+      >
+        {/* Badge */}
+        <div
+          className="
+          inline-flex
           items-center
-          p-3
-          rounded-2xl
-          hover:bg-white/5
-          transition
-          ">
+          gap-2
+          px-4
+          sm:px-5
+          py-2
+          sm:py-3
+          rounded-full
+          bg-[#FF0033]/10
+          border
+          border-[#FF0033]/30
+          "
+        >
+          <span className="text-[#FF0033]">✦</span>
 
-
-                  <div className="
-            w-11
-            h-11
-            sm:w-12
-            sm:h-12
-            shrink-0
-            rounded-2xl
-            bg-[#FF0033]/10
-            flex
-            items-center
-            justify-center
+          <span
+            className="
+            text-xs
+            sm:text-sm
+            uppercase
+            font-semibold
+            tracking-wider
             text-[#FF0033]
-            text-xl
-            ">
+            "
+          >
+            Contact Us
+          </span>
+        </div>
 
-                    <FaEnvelope />
+        {/* Heading */}
+        <h1
+          className="
+          mt-5
+          text-3xl
+          sm:text-4xl
+          md:text-5xl
+          lg:text-6xl
+          font-extrabold
+          leading-tight
+          text-white
+          "
+        >
+          Let's Get
 
-                  </div>
+          <span className="block text-[#FF0033]">
+            In Touch
+          </span>
+        </h1>
 
+        {/* Description */}
+        <p
+          className="
+          mt-4
+          text-base
+          sm:text-lg
+          leading-7
+          sm:leading-8
+          text-slate-300
+          max-w-xl
+          "
+        >
+          Have questions about admissions, courses, or our academy?
+          Our team is always ready to guide you and help you begin
+          your learning journey.
+        </p>
 
+        {/* Buttons */}
+        <div
+          className="
+          mt-6
+          flex
+          flex-col
+          sm:flex-row
+          gap-4
+          "
+        >
+          <button
+            className="
+            w-full
+            sm:w-auto
+            px-8
+            py-3.5
+            rounded-xl
+            bg-[#FF0033]
+            text-white
+            font-semibold
+            hover:scale-105
+            transition-all
+            duration-300
+            "
+          >
+            Apply Now
+          </button>
 
-                  <div className="min-w-0">
+          <button
+            className="
+            w-full
+            sm:w-auto
+            px-8
+            py-3.5
+            rounded-xl
+            border
+            border-white/20
+            text-white
+            hover:border-[#FF0033]
+            hover:text-[#FF0033]
+            transition-all
+            duration-300
+            "
+          >
+            Contact Us
+          </button>
+        </div>
+      </motion.div>
 
-                    <h3 className="text-white font-semibold">
-                      Email
-                    </h3>
-
-
-                    <p className="
-              text-slate-300
-              text-sm
-              sm:text-base
-              break-all
-              ">
-                      info@amirmathacademy.com
-                    </p>
-
-
-                  </div>
-
-
-                </div>
-
-
-
-
-
-
-
-                <div className="flex gap-3 items-center">
-
-
-                  <div className="
-            w-11
-            h-11
-            sm:w-12
-            sm:h-12
-            shrink-0
-            rounded-2xl
-            bg-[#FF0033]/10
-            flex
-            items-center
-            justify-center
-            text-[#FF0033]
-            text-xl
-            ">
-
-                    <FaMapMarkerAlt />
-
-                  </div>
-
-
-
-                  <div>
-
-                    <h3 className="text-white font-semibold">
-                      Address
-                    </h3>
-
-                    <p className="text-slate-300 text-sm sm:text-base">
-                      Lahore, Pakistan
-                    </p>
-
-                  </div>
-
-
-                </div>
-
-
-
-
-              </div>
-
-
-            </motion.div>
-
-
-
-
-
-
-
-            {/* Right Side */}
-
-
-            <motion.div
-
-              initial={{ opacity: 0, x: 60 }}
-
-              whileInView={{ opacity: 1, x: 0 }}
-
-              viewport={{ once: true }}
-
-              transition={{ duration: 0.8 }}
-
-              className="
+      {/* Right Side */}
+      <motion.div
+        initial={{ opacity: 0, x: 60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="
         relative
         flex
         justify-center
         mt-10
         lg:mt-0
         "
+      >
+        {/* Glow */}
+        <div
+          className="
+          absolute
+          w-[280px]
+          h-[280px]
+          sm:w-[380px]
+          sm:h-[380px]
+          lg:w-[420px]
+          lg:h-[420px]
+          rounded-full
+          bg-gradient-to-br
+          from-[#FF0033]/30
+          via-[#7C3AED]/20
+          to-[#2563EB]/20
+          blur-[100px]
+          sm:blur-[140px]
+          "
+        ></div>
 
-            >
-
-
-
-              {/* Glow */}
-
-              <div className="
-        absolute
-        w-[280px]
-        h-[280px]
-        sm:w-[380px]
-        sm:h-[380px]
-        lg:w-[420px]
-        lg:h-[420px]
-        rounded-full
-        bg-gradient-to-br
-        from-[#FF0033]/30
-        via-[#7C3AED]/20
-        to-[#2563EB]/20
-        blur-[100px]
-        sm:blur-[140px]
-        "></div>
-
-
-
-
-
-              {/* Image */}
-
-              <div className="
-        relative
-        z-10
-        overflow-hidden
-        rounded-[30px]
-        sm:rounded-[36px]
-        border
-        border-white/10
-        shadow-2xl
-        ">
-
-
-                <img
-                  src={contactHero}
-                  alt="Contact"
-                  className="
+        {/* Image */}
+        <div
+          className="
+          relative
+          z-10
+          overflow-hidden
+          rounded-[30px]
+          sm:rounded-[36px]
+          border
+          border-white/10
+          shadow-2xl
+          "
+        >
+          <img
+            src={contactHero}
+            alt="Contact"
+            className="
             w-[280px]
             sm:w-[350px]
             md:w-[400px]
@@ -474,24 +276,12 @@ lg:py-24
             transition
             duration-700
             "
-                />
-
-
-              </div>
-
-
-
-            </motion.div>
-
-
-
-
-          </div>
-
+          />
         </div>
-
-      </section>
-
+      </motion.div>
+    </div>
+  </div>
+</section>
       <section className="py-16 sm:py-20 lg:py-24 bg-[#111827]">
 
         <div className="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8">

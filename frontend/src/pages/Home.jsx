@@ -5,7 +5,6 @@ import WhyChooseUs from "../components/home/WhyChooseUs"
 import Achievement from "../components/home/Achievements"
 import Testimonials from "../components/home/Testimonials"
 import Teachers from "../components/home/Teachers"
-// import Gallery from "../components/home/Gallery"
 import FAQ from "../components/home/FAQ"
 import Contact from "../components/home/Contact"
 
@@ -20,7 +19,6 @@ const Home = () => {
       <Achievement />
       <Testimonials />
       <Teachers />
-      {/* <Gallery /> */}
       <FAQ />
       <Contact />
     </>

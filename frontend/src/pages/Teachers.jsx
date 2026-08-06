@@ -1,6 +1,5 @@
 import teacherHero from "../assets/images/teacherImg2.png";
 import { motion } from "framer-motion";
-// import { FaUserGraduate, FaChalkboardTeacher } from "react-icons/fa";
 import teacher1 from "../assets/images/teacherImg1.png";
 import teacher2 from "../assets/images/teacherImg2.png";
 import teacher3 from "../assets/images/teacherImg3.png";
